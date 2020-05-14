@@ -28,7 +28,7 @@ class App extends Component {
 
   handleSubmitForm = async (e) => {
     e.preventDefault();
-    const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=ec07133777be04a36f3647d13eff4d0d&units=metric`;
+    const API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=ec07133777be04a36f3647d13eff4d0d&units=metric`;
     try {
       const response = await fetch(API);
       const data = await response.json();
